@@ -1,0 +1,260 @@
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="หน้าแรก | พรรคไทยรุ่งเรืองพลัส">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thairungreuangplus.vercel.app/">
+    <meta property="og:image" content="https://thairungreuangplus.vercel.app/assets/thumbnail.png">
+    <meta property="og:site_name" content="พรรคไทยรุ่งเรืองพลัส">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="หน้าแรก | พรรคไทยรุ่งเรืองพลัส">
+    <meta name="twitter:image" content="https://thairungreuangplus.vercel.app/assets/thumbnail.png">
+
+    <title>หน้าแรก | พรรคไทยรุ่งเรืองพลัส</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="alert">เว็บไซต์ DEMO - แม่แบบจากพรรคก้าวใหม่ อาจมีเนื้อหาของพรรคก้าวใหม่บางส่วนยังคงอยู่</div>
+    <header>
+        <a class="logo" href="/">
+            <img src="/assets/icon.png">
+            พรรคไทยรุ่งเรืองพลัส
+        </a>
+        <nav>
+            <a href="/" class="active">หน้าแรก</a>
+            <a href="/policy/">นโยบาย</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">
+                    ส.ส. พรรค
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="/mp/party-list/">ส.ส. แบบบัญชีรายชื่อ</a>
+                    <a href="/mp/district/">ส.ส. แบบแบ่งเขต</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">
+                    เกี่ยวกับพรรค
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="/about/history.html">ประวัติความเป็นมา</a>
+                    <a href="/about/">อุดมการณ์ของพรรค</a>
+                    <a href="/about/board.html">บุคลากรพรรค</a>
+                    <a href="/contact.html">ติดต่อ</a>
+                </div>
+            </div>
+        </nav>
+        <div class="menu-btn bi bi-list" onclick="toggleMenu()"></div>
+
+        <div class="offcanvas" id="offcanvas">
+
+            <!-- หน้าหลัก -->
+            <div class="offcanvas-page main-page">
+
+                <div class="close-btn bi bi-x" onclick="toggleMenu()"></div>
+
+                <a href="/" class="active">หน้าแรก</a>
+                <a href="/policy/">นโยบาย</a>
+
+                <a href="#" onclick="openSubmenu(event, 'mp')">
+                    ส.ส. พรรค
+                </a>
+
+                <a href="#" onclick="openSubmenu(event, 'about')">
+                    เกี่ยวกับพรรค
+                </a>
+
+            </div>
+
+            <div class="offcanvas-page submenu-page" id="mp">
+
+                <div class="back-btn" onclick="closeSubmenu()">
+                    <i class="bi bi-arrow-left"></i>
+                </div>
+
+                <a href="/mp/party-list/">ส.ส. แบบบัญชีรายชื่อ</a>
+                <a href="/mp/district/">ส.ส. แบบแบ่งเขต</a>
+
+            </div>
+
+            <div class="offcanvas-page submenu-page" id="about">
+
+                <div class="back-btn" onclick="closeSubmenu()">
+                    <i class="bi bi-arrow-left"></i>
+                </div>
+
+                <a href="/about/history.html">ประวัติความเป็นมา</a>
+                <a href="/about/">อุดมการณ์ของพรรค</a>
+                <a href="/about/board.html">บุคลากรพรรค</a>
+                <a href="/contact.html">ติดต่อ</a>
+
+            </div>
+
+        </div>
+        
+    </header>
+
+    <div class="slider">
+        
+        <div class="slides">
+
+            <a href="" class="slide">
+                <img src="https://placehold.co/1920x1080" alt="">
+            </a>
+
+            <a href="" class="slide">
+                <img src="https://placehold.co/1920x1080" alt="">
+            </a>
+
+        </div>
+
+        <div class="prev">
+            <i class="bi bi-chevron-left"></i>
+        </div>
+
+        <div class="next">
+            <i class="bi bi-chevron-right"></i>
+        </div>
+
+        <div class="dots"></div>
+    </div>
+
+    <main>
+
+        <section class="news">
+
+            <div class="heading">ข่าวสารจากพรรค</div>
+
+            <div class="news-grid">
+
+                <a href=".html" class="news-card">
+                    <img src="https://placehold.co/1920x1080" alt="">
+                    <div class="news-content">
+                        <p>1 กันยายน 2569</p>
+                        <h3>ทดสอบ</h3>
+                        <span>อ่านต่อ <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href=".html" class="news-card">
+                    <img src="https://placehold.co/1920x1080" alt="">
+                    <div class="news-content">
+                        <p>1 กันยายน 2569</p>
+                        <h3>ทดสอบ</h3>
+                        <span>อ่านต่อ <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href=".html" class="news-card">
+                    <img src="https://placehold.co/1920x1080" alt="">
+                    <div class="news-content">
+                        <p>1 กันยายน 2569</p>
+                        <h3>ทดสอบ</h3>
+                        <span>อ่านต่อ <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href=".html" class="news-card">
+                    <img src="https://placehold.co/1920x1080" alt="">
+                    <div class="news-content">
+                        <p>1 กันยายน 2569</p>
+                        <h3>ทดสอบ</h3>
+                        <span>อ่านต่อ <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href=".html" class="news-card">
+                    <img src="https://placehold.co/1920x1080" alt="">
+                    <div class="news-content">
+                        <p>1 กันยายน 2569</p>
+                        <h3>ทดสอบ</h3>
+                        <span>อ่านต่อ <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href=".html" class="news-card">
+                    <img src="https://placehold.co/1920x1080" alt="">
+                    <div class="news-content">
+                        <p>1 กันยายน 2569</p>
+                        <h3>ทดสอบ</h3>
+                        <span>อ่านต่อ <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <section class="footer-cta">
+        <div class="footer-container">
+
+            <div class="cta-content">
+                <h2>อยากมีส่วนร่วมกับเรา?</h2>
+                <p>
+                    ร่วมเสนอความคิดเห็น ร่วมกิจกรรม หรือเป็นส่วนหนึ่งของการเปลี่ยนแปลง
+                </p>
+            </div>
+
+            <a href="https://discord.gg/2YGEbGtACb" target="_blank">
+                <button>เข้าร่วมกับเรา</button>
+            </a>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <div class="logo" href="/">
+                        <img src="assets/icon.png">
+                        พรรคไทยรุ่งเรืองพลัส
+                    </div>
+
+                    <p>
+                        1111 ถนนสามเสน แขวงถนนนครไชยศรี <br>
+                        เขตดุสิต กรุงเทพมหานคร
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <script type="text/javascript">document.write(new Date().getFullYear());</script> พรรคไทยรุ่งเรืองพลัส
+                </p>
+
+                <p style="margin-top: 10px; color: red;">
+                    (หนึ่งในพรรคการเมืองจำลองของ PRKOT)
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="load.js">
+
+    </script>
+</body>
+</html>
